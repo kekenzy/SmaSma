@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08702DED1F6A84CB0095A648 /* BleFormatter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08702DEA1F6A845D0095A648 /* BleFormatter.framework */; };
+		08702DEE1F6A84CB0095A648 /* BleFormatter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 08702DEA1F6A845D0095A648 /* BleFormatter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		08C66A5D1E1238BC0021448C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C66A5C1E1238BC0021448C /* AppDelegate.swift */; };
 		08C66A5F1E1238BC0021448C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C66A5E1E1238BC0021448C /* ViewController.swift */; };
 		08C66A621E1238BC0021448C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08C66A601E1238BC0021448C /* Main.storyboard */; };
@@ -17,6 +19,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		08702DE91F6A845D0095A648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08702DE41F6A845D0095A648 /* BleFormatter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08025CD11E0A1EDC002A1E89;
+			remoteInfo = BleFormatter;
+		};
+		08702DEB1F6A845D0095A648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08702DE41F6A845D0095A648 /* BleFormatter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 08025CDA1E0A1EDD002A1E89;
+			remoteInfo = BleFormatterTests;
+		};
+		08702DEF1F6A84CB0095A648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08702DE41F6A845D0095A648 /* BleFormatter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 08025CD01E0A1EDC002A1E89;
+			remoteInfo = BleFormatter;
+		};
 		08C66A6E1E1238BC0021448C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08C66A511E1238BC0021448C /* Project object */;
@@ -33,7 +56,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		08F9F2701E1252EF0064515D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				08702DEE1F6A84CB0095A648 /* BleFormatter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		08702DE41F6A845D0095A648 /* BleFormatter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = BleFormatter.xcodeproj; path = ../BleFormatter/BleFormatter.xcodeproj; sourceTree = "<group>"; };
+		08A487531E125447004FFCB4 /* BleFormatter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BleFormatter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C66A591E1238BC0021448C /* SmaSma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmaSma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C66A5C1E1238BC0021448C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08C66A5E1E1238BC0021448C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08702DED1F6A84CB0095A648 /* BleFormatter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,13 +114,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08702DE51F6A845D0095A648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08702DEA1F6A845D0095A648 /* BleFormatter.framework */,
+				08702DEC1F6A845D0095A648 /* BleFormatterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		08C66A501E1238BC0021448C = {
 			isa = PBXGroup;
 			children = (
+				08A487531E125447004FFCB4 /* BleFormatter.framework */,
 				08C66A5B1E1238BC0021448C /* SmaSma */,
 				08C66A701E1238BC0021448C /* SmaSmaTests */,
 				08C66A7B1E1238BC0021448C /* SmaSmaUITests */,
 				08C66A5A1E1238BC0021448C /* Products */,
+				08C66ACF1E123E630021448C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +176,14 @@
 			path = SmaSmaUITests;
 			sourceTree = "<group>";
 		};
+		08C66ACF1E123E630021448C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08702DE41F6A845D0095A648 /* BleFormatter.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +194,12 @@
 				08C66A551E1238BC0021448C /* Sources */,
 				08C66A561E1238BC0021448C /* Frameworks */,
 				08C66A571E1238BC0021448C /* Resources */,
+				08F9F2701E1252EF0064515D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				08702DF01F6A84CB0095A648 /* PBXTargetDependency */,
 			);
 			name = SmaSma;
 			productName = SmaSma;
@@ -193,7 +254,7 @@
 				TargetAttributes = {
 					08C66A581E1238BC0021448C = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = 6X2JS9YAAQ;
+						DevelopmentTeam = 4Q82897S4S;
 						ProvisioningStyle = Automatic;
 					};
 					08C66A6C1E1238BC0021448C = {
@@ -221,6 +282,12 @@
 			mainGroup = 08C66A501E1238BC0021448C;
 			productRefGroup = 08C66A5A1E1238BC0021448C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 08702DE51F6A845D0095A648 /* Products */;
+					ProjectRef = 08702DE41F6A845D0095A648 /* BleFormatter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				08C66A581E1238BC0021448C /* SmaSma */,
@@ -229,6 +296,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		08702DEA1F6A845D0095A648 /* BleFormatter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = BleFormatter.framework;
+			remoteRef = 08702DE91F6A845D0095A648 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		08702DEC1F6A845D0095A648 /* BleFormatterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = BleFormatterTests.xctest;
+			remoteRef = 08702DEB1F6A845D0095A648 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		08C66A571E1238BC0021448C /* Resources */ = {
@@ -286,6 +370,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		08702DF01F6A84CB0095A648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BleFormatter;
+			targetProxy = 08702DEF1F6A84CB0095A648 /* PBXContainerItemProxy */;
+		};
 		08C66A6F1E1238BC0021448C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 08C66A581E1238BC0021448C /* SmaSma */;
@@ -358,7 +447,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -414,12 +503,15 @@
 		08C66A821E1238BC0021448C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6X2JS9YAAQ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4Q82897S4S;
 				INFOPLIST_FILE = SmaSma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.canon-soft.SmaSma";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -427,12 +519,15 @@
 		08C66A831E1238BC0021448C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6X2JS9YAAQ;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4Q82897S4S;
 				INFOPLIST_FILE = SmaSma/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.co.canon-soft.SmaSma";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -514,6 +609,7 @@
 				08C66A831E1238BC0021448C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08C66A841E1238BC0021448C /* Build configuration list for PBXNativeTarget "SmaSmaTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +618,7 @@
 				08C66A861E1238BC0021448C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08C66A871E1238BC0021448C /* Build configuration list for PBXNativeTarget "SmaSmaUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +627,7 @@
 				08C66A891E1238BC0021448C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
